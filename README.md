@@ -1,5 +1,7 @@
 # oxlint-action-debug
 
+Testing environment for oxlint GitHub Action.
+
 To install dependencies:
 
 ```bash
