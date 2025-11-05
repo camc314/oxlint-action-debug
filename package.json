@@ -1,0 +1,21 @@
+{
+  "name": "oxlint-action-debug",
+  "engines": {
+    "node": ">=16.0"
+  },
+  "private": true,
+  "scripts": {
+    "lint": "oxlint resources/scripts/",
+    "lint:fix": "oxlint resources/scripts/ --fix"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "oxlint": "^1.25.0",
+    "react": "^19.2.0"
+  }
+}

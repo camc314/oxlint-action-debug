@@ -1,0 +1,24 @@
+name: Lint Code
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+jobs:
+  lint:
+    name: Oxlint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oxc-project/oxlint-action@v2.0.2
+        with:
+          config: .oxlintrc.json
+          working-directory: resources/scripts
