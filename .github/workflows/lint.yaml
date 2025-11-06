@@ -21,4 +21,5 @@ jobs:
       - uses: oxc-project/oxlint-action@v2.0.2
         with:
           config: .oxlintrc.json
+          warn: ''
           working-directory: resources/scripts
