@@ -18,9 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: oxc-project/oxlint-action@v2.0.2
+      - uses: oxc-project/oxlint-action@f95bba5b65244df9bd7f5106494a7ef1fd44f22e
         with:
           config: .oxlintrc.json
-          warn: " "
           all-files: true
           working-directory: resources/scripts
